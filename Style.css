@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --selva: #0b3d2e;
+    --esmeralda: #14705a;
+    --oro: #f2b705;
+    --coral: #e4572e;
+    --azul: #1b6ca8;
+    --crema: #fff8e7;
+    --texto: #2b2b2b;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: var(--crema);
+    color: var(--texto);
+}
+
+h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ---------- Navbar ---------- */
+.navbar.bg-dark {
+    background: linear-gradient(90deg, var(--selva), var(--esmeralda)) !important;
+    border-bottom: 4px solid var(--oro);
+}
+.navbar-brand { color: var(--oro) !important; font-weight: 900; letter-spacing: 1px; }
+.navbar .nav-link { color: #e8f5ef; font-weight: 600; margin-left: .5rem; }
+.navbar .nav-link:hover { color: var(--oro); }
+.navbar .nav-link.active {
+    color: var(--selva) !important;
+    background: var(--oro);
+    border-radius: 20px;
+    padding-left: 1rem; padding-right: 1rem;
+}
+
+/* ---------- Títulos ---------- */
+main > h1 {
+    color: var(--selva);
+    font-weight: 900;
+}
+main > h1::after {
+    content: "";
+    display: block;
+    width: 120px; height: 5px;
+    margin: .6rem auto 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--coral), var(--oro), var(--azul));
+}
+h2 { color: var(--esmeralda); }
+
+/* ---------- Imágenes ---------- */
+main img { border: 4px solid #fff; box-shadow: 0 6px 18px rgba(11, 61, 46, .25); }
+
+/* ---------- Componentes Bootstrap ---------- */
+.card { border: none; border-top: 5px solid var(--oro); border-radius: 12px; overflow: hidden; }
+.card:hover { transform: translateY(-4px); transition: .25s; }
+.card-title { color: var(--selva); font-family: 'Playfair Display', serif; }
+
+.alert-success {
+    background: #e3f4ec;
+    border-left: 6px solid var(--esmeralda);
+    color: var(--selva);
+}
+
+.accordion-button:not(.collapsed) { background: #e3f4ec; color: var(--selva); }
+.accordion-button:focus { box-shadow: 0 0 0 .2rem rgba(20, 112, 90, .25); }
+
+.btn-success { background: var(--esmeralda); border-color: var(--esmeralda); }
+.btn-success:hover { background: var(--selva); border-color: var(--selva); }
+.btn-oro { background: var(--oro); color: var(--selva); font-weight: 600; border: none; }
+.btn-oro:hover { background: #ffd23f; color: var(--selva); }
+
+.modal-header { background: var(--selva); color: var(--oro); }
+.modal-header .btn-close { filter: invert(1); }
+
+.progress { background: #e3e3e3; }
+
+.carousel-item img { border: none !important; box-shadow: none !important; }
+.carousel-inner { border: 4px solid #fff; }
+
+/* ---------- Portada (index) ---------- */
+.hero {
+    background: linear-gradient(135deg, var(--selva) 0%, var(--esmeralda) 60%, var(--azul) 100%);
+    color: #fff;
+    padding: 4rem 0 5rem;
+    text-align: center;
+}
+.hero h1 { color: var(--oro); font-weight: 900; text-shadow: 2px 3px 8px rgba(0, 0, 0, .35); }
+.hero .lead { color: #e8f5ef; max-width: 700px; margin: 0 auto; }
+.hero-img { margin-top: -3rem; }
+.hero-img img { max-width: 520px; border-radius: 16px; }
+
+.seccion-titulo { text-align: center; color: var(--selva); margin-bottom: 2rem; }
+
+.dato {
+    border-radius: 14px;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    height: 100%;
+}
+.dato .numero { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 900; }
+.dato-1 { background: var(--coral); }
+.dato-2 { background: var(--esmeralda); }
+.dato-3 { background: var(--azul); }
+
+/* ---------- Pie de página ---------- */
+.pie {
+    background: var(--selva);
+    color: #cfe9de;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 4px solid var(--oro);
+}
+.pie strong { color: var(--oro); }

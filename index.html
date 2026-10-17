@@ -3,35 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio 6 - Inicio</title>
-
-    <!-- Bootstrap (lo usaremos más en la Actividad 3) -->
+    <title>Aves del paraíso - Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Menú de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Mi Sitio</a>
+            <a class="navbar-brand" href="index.html">Aves del Paraíso</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">pagina 1</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">pagina 2</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">pagina 3</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina1.html">pagina 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina2.html">pagina 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina3.html">pagina 3</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Contenido principal -->
-    <main class="container text-center mt-5">
-        <h1 class="display-1 fw-bold">Lorem ipsum dolor sit amet</h1>
-        <img src="imagen.jpg" alt="Imagen de la página" class="img-fluid rounded mt-4" style="max-width: 500px;">
+    <!-- Portada -->
+    <header class="hero">
+        <div class="container">
+            <span class="badge bg-warning text-dark mb-3 fs-6">Familia Paradisaeidae</span>
+            <h1 class="display-1">Aves del Paraíso</h1>
+            <p class="lead mt-3">
+                Las joyas emplumadas de Nueva Guinea: colores imposibles, bailes de cortejo
+                espectaculares y una historia que mezcla ciencia, exploración y leyenda.
+            </p>
+            <div class="mt-4">
+                <a href="pagina1.html" class="btn btn-oro btn-lg me-2">Comenzar el recorrido</a>
+                <a href="pagina2.html" class="btn btn-outline-light btn-lg">Ver especies</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Imagen principal -->
+        <div class="hero-img text-center">
+            <img src="imagen.jpg" alt="Ave del paraíso" class="img-fluid">
+        </div>
+
+        <!-- Bienvenida -->
+        <section class="row justify-content-center my-5">
+            <div class="col-lg-8">
+                <h2 class="seccion-titulo">Bienvenido al sitio</h2>
+                <p class="lead">
+                    Pocas aves en el mundo llaman tanto la atención como las aves del paraíso. Sus machos
+                    lucen plumas largas, brillantes y con formas extravagantes que han fascinado a
+                    naturalistas, artistas y viajeros durante siglos.
+                </p>
+                <p>
+                    Este sitio es un pequeño viaje por su mundo: descubrirás qué son, dónde viven, cómo
+                    se ven algunas de sus especies más famosas y por qué dedican tanto tiempo a
+                    exhibiciones de cortejo que parecen verdaderas coreografías.
+                </p>
+                <p>
+                    También hablaremos de su situación actual y de lo importante que es proteger los
+                    bosques tropicales donde habitan, un hogar del que depende toda su biodiversidad.
+                </p>
+            </div>
+        </section>
+
+        <!-- Qué encontrarás -->
+        <section class="my-5">
+            <h2 class="seccion-titulo">¿Qué encontrarás aquí?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Qué son</h5>
+                            <p class="card-text">Su origen, dónde viven y la curiosa historia detrás de su nombre.</p>
+                            <a href="pagina1.html" class="btn btn-success">Ir a pagina 1</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Especies destacadas</h5>
+                            <p class="card-text">Conoce al ave del paraíso rey, a la mayor y a la de Wilson.</p>
+                            <a href="pagina2.html" class="btn btn-success">Ir a pagina 2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Danzas y conservación</h5>
+                            <p class="card-text">Sus bailes de cortejo y qué podemos hacer para protegerlas.</p>
+                            <a href="pagina3.html" class="btn btn-success">Ir a pagina 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Datos rápidos -->
+        <section class="my-5">
+            <h2 class="seccion-titulo">Sabías que...</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="dato dato-1">
+                        <div class="numero">~45</div>
+                        <p class="mb-0">especies forman la familia de las aves del paraíso.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dato dato-2">
+                        <div class="numero">Nueva Guinea</div>
+                        <p class="mb-0">es el hogar principal de la mayoría de sus especies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dato dato-3">
+                        <div class="numero">Siglo XVI</div>
+                        <p class="mb-0">cuando los europeos creyeron que estas aves no tenían patas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="pie">
+        <div class="container">
+            <p class="mb-1"><strong>Aves del Paraíso</strong> · Laboratorio 6 de Programación Web</p>
+            <small>Los colores de la selva de Nueva Guinea, en una página web.</small>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
