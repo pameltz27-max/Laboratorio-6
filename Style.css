@@ -14,6 +14,7 @@ body {
     font-family: 'Poppins', 'Segoe UI', sans-serif;
     background: var(--crema);
     color: var(--texto);
+    padding-top: 3rem  ;
 }
 
 h1, h2, h3, h4, .navbar-brand {
